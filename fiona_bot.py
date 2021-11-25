@@ -34,7 +34,6 @@ def start(update: Update, context: CallbackContext):
         chat_id = update.message.chat_id
         remove_job_if_exists(f"{chat_id}_1", context)
         remove_job_if_exists(f"{chat_id}_2", context)
-        remove_job_if_exists(f"{chat_id}_3", context)
 
         context.job_queue.run_daily(
             send_daily_weather_forecast,
@@ -46,7 +45,7 @@ def start(update: Update, context: CallbackContext):
         context.job_queue.run_daily(
             send_daily_airly_update,
             daily_morning_airly_time,
-            name=f"{chat_id}_4",
+            name=f"{chat_id}_2",
             context=chat_id,
         )
         msg = """
