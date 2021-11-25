@@ -51,11 +51,8 @@ def start(update: Update, context: CallbackContext):
         msg = """
 <b>Program</b>
 <code>
-     6:30 - Poranek z Sharkiem z Wall Street
+     6:30 - Good Morning!
      7:00 - Czy warto wyjść na zewnątrz?
-     8:00 - Crypto z rana jak śmietana.
-    12:00 - W samo południe! Przegląd kursów.
-    16:00 - Co w giełdzie Crypto i Walutach piszczy.
 </code>
 """
         context.bot.send_message(
